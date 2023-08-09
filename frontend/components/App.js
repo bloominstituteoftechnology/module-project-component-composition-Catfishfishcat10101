@@ -10,7 +10,6 @@ class App extends Component {
     date: new Date(),
     photo: null,
   };
-  
   changeDate = e => {
     e.preventDefault();
     let dateFromInput = e.target.elements.date.value; 

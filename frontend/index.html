@@ -15,7 +15,14 @@
 
   <div id="root"></div>
 
-  <footer></footer>
+  <footer id="footerId"></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+const footer = document.getElementById('footerId');
+const currentYear = new Date().getFullYear();
+footer.innerHTML = `© BLOOM INSTITUTE OF TECHNOLOGY ${currentYear}`;
 
   <script>
     const footer = document.querySelector('footer')
