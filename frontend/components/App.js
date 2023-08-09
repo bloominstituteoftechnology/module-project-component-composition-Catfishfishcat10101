@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react';
+import DateInput from "./components/DateInput";
+import Photo from "./components/Photo.js";
+import { render } from 'react-dom';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
+  render() {
   return (
-    <p>
-      Read through the instructions in the README.md file to build your NASA
-      app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-    </p>
-  )
+    <div>
+      <Header />
+      <h1>NASA's Astronomy Picture Of the Day</h1>
+      <DateInput />
+      <Photo />
+      <Footer />
+    </div>
+  );
+ }
 }
 
-export default App
+export default App;
