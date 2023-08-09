@@ -1,7 +1,18 @@
 import React from "react";
 
-const DateInput = (props) => 
-  <div>DateInput</div>;
-  export default DateInput;
-  
-  
+function DateInput(props) {
+  const changeDate = e => {
+    e.preventDefault();
+    let dateFromInput = e.target[0].value;
+    props.changeDate(dateFromInput);
+  };
+
+  return (
+    <form onSubmit={changeDate}>
+      Enter a date (YYYY-MM-DD):
+      <input />
+      <input type="submit" />
+    </form>
+  );
+}
+export default DateInput;
